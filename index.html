@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-time Counter</title>
+    <script src="counter.js" defer></script>
+</head>
+<body>
+    <h2>Type a Message :</h2>
+    <textarea type="text" maxlength="200" placeholder="Type Your Thoughts Here..." id="userInput"></textarea>
+    <p>Maximum Text : <b><span id="count">0</span>/200</b></p>
+    <p id="alert"><b>Warning : You Reached Text Limit</b></p>
+
+    <style>
+        textarea{
+            width: 250px;
+            height: 100px;
+            border: solid black 2.5px;
+            border-radius: 10px;
+        }
+        #alert{
+            color: red;
+            font-size: 20px;
+            display: none;
+        }
+    </style>
+</body>
+</html>
